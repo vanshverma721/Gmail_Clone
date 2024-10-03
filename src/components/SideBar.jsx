@@ -2,16 +2,16 @@ import React from 'react'
 import { Drawer, styled } from '@mui/material'
 import SideBarContent from './SideBarContent'
 
-const SideBar = () => {
+const SideBar = ({ openDraswer }) => {
     return (
         <Drawer
             anchor='left'
-            open={true}
+            open={openDraswer}
             hideBackdrop={true}
             ModalProps={{
                 keepMounted: true
             }}
-            variant='persistant'
+            variant='persistent'
             sx={{
                 '& .MuiDrawer-paper': {
                     marginTop: '64px',

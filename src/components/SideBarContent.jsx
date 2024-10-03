@@ -37,7 +37,7 @@ const SideBarContent = () => {
             <List>
                 {
                     SIDEBAR_DATA.map(data => (
-                        <ListItem>
+                        <ListItem key={data.title}>
                             <data.icon fontSize='small'/>{data.title}
                         </ListItem>
                     ))
