@@ -15,7 +15,7 @@ const ComposeMail = () => {
             open={true}
             PaperProps={{ sx: dialogStyle }}
         >
-            Hello hi
+            Hello
         </Dialog>
     )
 }
